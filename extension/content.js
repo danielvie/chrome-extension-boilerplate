@@ -3,7 +3,9 @@ var __webpack_exports__ = {};
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-console.log("hello world!");
+chrome.runtime.onMessage.addListener((request, sender, response) => {
+  console.log(request);
+});
 /******/ })()
 ;
 //# sourceMappingURL=content.js.map

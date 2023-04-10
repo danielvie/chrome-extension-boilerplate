@@ -1,1 +1,3 @@
-console.log("hello world!");
+chrome.runtime.onMessage.addListener( (request, sender, response) => {
+    console.log(request)
+})
