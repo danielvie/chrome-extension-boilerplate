@@ -4,7 +4,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 
 const config = {
-  entry: './src/index.js',
+  entry: './src/index.ts',
   output: {
     path: path.resolve(__dirname, 'extension'),
     filename: 'content.js'
@@ -15,6 +15,11 @@ const config = {
       {
         test: /\.js$/,
         use: 'babel-loader',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.ts$/,
+        use: 'ts-loader',
         exclude: /node_modules/
       }
     ]

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatCPT Extension</title>
+    <title>Mado Extension</title>
 </head>
 <style>
     * {
@@ -45,9 +45,10 @@
         border: none;
         border-radius: 0.5rem;
         cursor: pointer;
-        background-color: #343541;
+        background-color: #3c7bcc;
         color: #fff;
     }
+
     button:hover {
         box-shadow: 0 0 0.5rem #545567;
     }
@@ -56,12 +57,19 @@
 <body>
     <div id="app">
         <section class="header">
-            <h1>Beautiful Extension</h1>
+            <h1>Extension</h1>
         </section>
 
         <section>
-            <button id="btn-prompt">Send prompt</button>
-            <button id="btn-render">Render math</button>
+            <span>
+                <input type="checkbox" name="check-action" id="check-action">
+                <label for="check-action">check</label>
+            </span>
+            <button id="btn-action">Adapters</button>
+        </section>
+        
+        <section id="adapter-list-section">
+
         </section>
     </div>
 </body>
